@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.safaanabil.hichhecker.Request">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/ghost_white"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/home"
+                android:id="@+id/bag"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/bag"
+                android:layout_toRightOf="@+id/bag"
+                android:text="Order Request"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/ghost_white"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hicker"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:id="@+id/d"/>
+            <!-- Eidt Text for Date-->
+            <TextView
+                android:id="@+id/valuedate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/view11"
+
+                android:layout_toEndOf="@+id/tcy"
+                android:layout_toRightOf="@+id/tcy"
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                android:textColor="@android:color/black" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/d"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/view11" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/from_Country"
+                android:layout_below="@id/d"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/fc"/>
+            <!-- Eidt Text for from country -->
+            <TextView
+                android:id="@+id/f_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/fc"
+                android:layout_alignLeft="@+id/requestbutton"
+                android:layout_alignStart="@+id/requestbutton"
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                android:text="Eygpt"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/fc"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/view10" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/from_City"
+                android:layout_below="@id/fc"
+                android:textColor="@color/gold"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:id="@+id/fcy"/>
+            <!-- Eidt Text for from city -->
+            <TextView
+                android:id="@+id/f_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fc"
+                android:layout_toEndOf="@+id/tc"
+                android:layout_toRightOf="@+id/tc"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:textColor="@android:color/black"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/fcy"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to_Country"
+                android:layout_below="@id/fcy"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tc"/>
+            <!-- Eidt Text for to country -->
+            <TextView
+                android:id="@+id/t_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tcy"
+                android:layout_toEndOf="@+id/tc"
+                android:layout_toRightOf="@+id/tc"
+                android:background="@android:color/transparent"
+                android:text="Eygpt"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:textColor="@android:color/black"
+                 />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tc"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to_City"
+                android:layout_below="@id/tc"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:id="@+id/tcy"/>
+            <!-- Eidt Text for to city-->
+            <TextView
+                android:id="@+id/t_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tcy"
+                android:layout_alignBottom="@+id/tcy"
+                android:layout_toEndOf="@+id/tcy"
+                android:layout_toRightOf="@+id/tcy"
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                android:textColor="@android:color/black"
+                 />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tcy"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/view3" />
+
+            <TextView
+                android:id="@+id/pr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/view3"
+                android:padding="5dp"
+                android:text="@string/price"
+                android:textColor="@android:color/holo_purple"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <!-- Eidt Text for price-->
+            <EditText
+                android:id="@+id/price_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/statusspinner"
+                android:layout_alignStart="@+id/statusspinner"
+                android:layout_below="@+id/view3"
+                android:background="@android:color/transparent"
+                android:hint="@string/price"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColor="@android:color/holo_purple"
+                android:textColorHint="@android:color/darker_gray" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/pr"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/view4" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:layout_below="@id/pr"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:id="@+id/tp"/>
+
+            <Spinner
+                android:id="@+id/statusspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tp"
+                android:layout_alignBottom="@+id/tp"
+                android:layout_toEndOf="@+id/tcy"
+                android:layout_toRightOf="@+id/tcy"
+                android:backgroundTint="@android:color/black"
+                android:entries="@array/status"
+                android:padding="5dp" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tp"
+                android:textColor="@color/dark_brown"
+                android:background="@drawable/homebutton"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Request"
+                android:id="@+id/requestbutton"
+                android:onClick="req"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/loginlayout"
+    android:background="@color/home"
+    tools:context="com.example.safaanabil.hichhecker.MainActivity">
+     <ImageView
+         android:layout_width="match_parent"
+         android:src="@drawable/home"
+         android:layout_height="0dp"
+         android:layout_weight="0.4"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+        <Button
+            android:id="@+id/loginhicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/homebutton"
+            android:layout_centerInParent="true"
+            android:text="@string/hicker"
+            android:textColor="@android:color/black" /></RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+        <Button
+            android:id="@+id/loginuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/homebutton"
+            android:text="@string/user"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+     </LinearLayout>
+
+
+
+

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/ghost_white"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent" >
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_margin="10dp"
+     android:layout_height="wrap_content">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/blackcircural"
+          android:padding="10dp"
+          android:text= "@string/title3"
+          android:textStyle="bold"
+          android:textColor="@android:color/black"
+          android:textSize="16sp"
+          android:gravity="center_horizontal"
+
+
+          />
+
+ </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/layoutshadow"
+        >
+
+
+    <LinearLayout
+
+    android:layout_width="match_parent"
+     android:layout_margin="5dp"
+     android:id="@+id/hickerlayout"
+     android:orientation="horizontal"
+     android:clickable="true"
+     android:layout_height="wrap_content"
+     >
+
+        <RelativeLayout
+            android:id="@+id/imagelayout"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:layout_weight="0.2">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circuralimage"
+                android:src="@drawable/p" />
+
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="0.4">
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="Username"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Type"
+            android:id="@+id/typetext"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user"
+            android:layout_toRightOf="@id/typetext"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:id="@+id/typevalue"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_margin="5dp"
+        android:layout_height="100dp"
+        android:layout_weight="0.4">
+
+       <ImageView
+           android:layout_width="20dp"
+           android:layout_height="20dp"
+           android:src="@drawable/time"
+           android:id="@+id/timeimage"
+           android:layout_margin="10dp"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/timeimage"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:id="@+id/triptime"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/calender"
+
+            android:layout_below="@id/timeimage"
+            android:id="@+id/dateimage"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dateimage"
+            android:layout_below="@id/triptime"
+            android:layout_alignTop="@id/dateimage"
+            android:layout_marginLeft="2dp"
+            android:text=""
+            android:id="@+id/tripdate"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+
+            />
+
+    </RelativeLayout>
+ </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reciver"
+                android:id="@+id/dep"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From Country"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:id="@+id/fct"
+                android:layout_below="@+id/dep"
+                android:layout_margin="10dp"
+                android:textStyle="normal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From Country"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:id="@+id/from_country"
+                android:layout_toRightOf="@+id/fct"
+                android:layout_below="@+id/dep"
+                android:layout_margin="10dp"
+                android:textStyle="normal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From City"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/fcty"
+                android:layout_below="@+id/fct"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From City"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:id="@+id/to_city"
+                android:layout_below="@+id/from_country"
+                android:layout_toRightOf="@+id/fcty"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/arrive"
+                android:id="@+id/arr"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/fcty"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To Country"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:id="@+id/tct"
+                android:layout_below="@+id/arr"
+                android:layout_margin="10dp"
+                android:textStyle="normal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To Country"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:id="@+id/to_country"
+                android:layout_toRightOf="@+id/tct"
+                android:layout_below="@+id/arr"
+                android:layout_margin="10dp"
+                android:textStyle="normal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To City"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/tcty"
+                android:layout_below="@+id/tct"
+                android:layout_marginLeft="10dp"
+                android:textStyle="normal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/to_country"
+                android:layout_alignRight="@+id/to_city"
+                android:text="To City"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone"
+                android:id="@+id/phone"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tcty"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="phone"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:id="@+id/phone_number"
+                android:layout_below="@+id/phone"
+                android:layout_margin="10dp"
+                android:textStyle="normal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price"
+                android:id="@+id/price"
+                android:layout_below="@+id/phone_number"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:id="@+id/price_value"
+                android:layout_below="@+id/price"
+                android:layout_margin="10dp"
+                android:textStyle="normal"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

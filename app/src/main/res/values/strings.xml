@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="title_activity_home_page">HomePage</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hicker">Hicker</string>
+    <string name="user">User</string>
+    <!-- These String are specifying for home_user activity -->
+    <string name="quote">No one is unless in this world who lightens the burdens of another </string>
+    <string name="Charles_Dickenes">"\"Charles Dickenes\""</string>
+    <string name="Show_all">Available Hickers</string>
+    <string name="find">Find Hicker</string>
+    <string name="contact_us">Contact us</string>
+    <string name="contract">contract Hicker</string>
+
+    <!-- These strings are specifying for activity_history Layout -->
+    <string name="title">History of Your Trips</string>
+    <string name="name">Name</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="from_Country">From Country</string>
+    <string name="from_City">From City</string>
+    <string name="to_Country">To Country</string>
+    <string name="to_City">To City</string>
+
+    <!-- These strings are specifying for activity_find layout -->
+    <string name="title2">Fill The Following information to Your Hecher</string>
+    <string name="reciver">Departure</string>
+    <string name="arrive">Arrive</string>
+    <string name="phone">Phone Number</string>
+    <string name="price">Price</string>
+
+    <!--These strings are specifying for result view  -->
+    <string name="title3">Choose Your Hicker by Click</string>
+    <string name="type">Type</string>
+    <string name="title_activity_hicker_home">HickerHome</string>
+
+    <!--Drop List for Type in activity_add_trip -->
+    <string-array name="types">
+        <item>Choose a type</item>
+        <item>fragile</item>
+        <item>not fragile</item>
+
+    </string-array>
+
+    <string-array name="city">
+        <item>Choose a city</item>
+        <item>Assuit</item>
+        <item>Cairo</item>
+        <item>Mina</item>
+    </string-array>
+
+    <string-array name="country">
+        <item>Choose a country</item>
+        <item>Egypt</item>
+    </string-array>
+
+    <string-array name="hichstatus">
+        <item>On going</item>
+        <item>Done</item>
+        <item>Canceled</item>
+    </string-array>
+
+
+    <string-array name="userstatus">
+        <item>choose</item>
+        <item>On going</item>
+        <item>Done</item>
+        <item>Canceled</item>
+
+    </string-array>
+
+
+    <string-array name="status">
+        <item>true</item>
+        <item>false</item>
+    </string-array>
+</resources>

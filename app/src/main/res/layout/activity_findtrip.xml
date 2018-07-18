@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/ghost_white"
+   android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.safaanabil.hichhecker.Findtrip">
+
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/title"
+        android:background="@drawable/findshadow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "@string/title2"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title"
+        android:layout_below="@+id/title"
+        android:layout_weight="0.4"
+        android:background="@drawable/findshadow2"
+        android:padding="5dp">
+
+        <!--  Desgin for Date field -->
+        <TextView
+            android:id="@+id/datetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nametext"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/holo_blue_dark"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="5dp"
+            android:text="@string/date"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/datevalue2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/namevalue"
+            android:layout_below="@id/nametext"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/datetext"
+            android:background="@android:color/transparent"
+            android:inputType="date"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_below="@+id/datetext"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/holo_blue_dark" />
+
+        <!-- Desgin for sender country field-->
+        <TextView
+            android:id="@+id/fromcountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/datetext"
+            android:layout_below="@+id/datetext"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/holo_blue_dark"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="5dp"
+            android:text="@string/from_Country"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/datetext"
+            android:layout_toRightOf="@id/fromcountry"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:entries="@array/country"
+            android:padding="5dp" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_below="@+id/fromcountry"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/holo_blue_dark" />
+
+
+        <!-- Design for sender city field-->
+        <TextView
+            android:id="@+id/fromcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fromcountry"
+            android:layout_below="@+id/fromcountry"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/holo_blue_dark"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="5dp"
+            android:text="@string/from_City"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/fromcity"
+            android:layout_toEndOf="@+id/tocountry"
+            android:layout_toRightOf="@+id/tocountry"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:entries="@array/city"
+            android:padding="5dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_below="@+id/fromcity"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/holo_blue_dark"
+            android:id="@+id/view" />
+        <!-- Desgin for reciever county field -->
+        <TextView
+            android:id="@+id/tocountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fromcity"
+            android:layout_below="@+id/fromcity"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/holo_blue_dark"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="5dp"
+            android:text="@string/to_Country"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/search"
+            android:layout_alignStart="@+id/search"
+            android:layout_alignTop="@+id/tocountry"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:entries="@array/country"
+            android:padding="5dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tocountry"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/holo_blue_dark" />
+        <!-- Desgin for reciver city field -->
+        <TextView
+            android:id="@+id/tocity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tocountry"
+            android:layout_below="@+id/tocountry"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/holo_blue_dark"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="5dp"
+            android:text="@string/from_City"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tocity"
+            android:layout_toEndOf="@+id/tocountry"
+            android:layout_toRightOf="@+id/tocountry"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:entries="@array/city"
+            android:padding="5dp" />
+
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_toEndOf="@+id/fromcountry"
+            android:layout_toRightOf="@+id/fromcountry"
+            android:background="@drawable/circuralsearch"
+            android:onClick="search"
+            android:text="Search"
+            android:textColor="@android:color/holo_blue_dark" />
+
+    </RelativeLayout>
+
+
+ <ImageView
+     android:layout_width="wrap_content"
+     android:layout_height="0dp"
+     android:layout_weight="0.2"
+     android:layout_gravity="center_horizontal"
+     android:src="@drawable/look"/>
+
+
+</LinearLayout>
